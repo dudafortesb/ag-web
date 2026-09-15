@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skins - Conta</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="./assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <main class="container-central">
+      <!-- Seção de Cadastro -->
+      <section id="cadastro" class="caixa-form">
+        <form action="#">
+          <h2>Cadastro</h2>
+          <input
+            type="text"
+            maxlength="10"
+            placeholder="Usuário"
+            required
+            class="campo"
+            name="fusuario"
+          />
+          <input
+            type="email"
+            maxlength="70"
+            placeholder="E-mail"
+            required
+            class="campo"
+            name="femail"
+          />
+          <input
+            type="password"
+            maxlength="12"
+            minlength="8"
+            placeholder="Senha"
+            required
+            class="campo"
+            name="fsenha"
+          />
+          <input
+            type="password"
+            maxlength="12"
+            minlength="8"
+            placeholder="Confirme a Senha"
+            required
+            class="campo"
+            name="fsenha2"
+          />
+
+          <button class="campo botao">Cadastrar</button>
+          <a href="#login" class="alternar">Já tem conta? Entre!</a>
+        </form>
+      </section>
+
+      <!-- Seção de Login -->
+      <section id="login" class="caixa-form">
+        <form action="./home.html">
+          <h2>Login</h2>
+          <input
+            type="email"
+            maxlength="70"
+            placeholder="E-mail"
+            required
+            class="campo"
+            name="femail"
+          />
+          <input
+            type="password"
+            maxlength="12"
+            minlength="8"
+            placeholder="Senha"
+            required
+            class="campo"
+            name="fsenha"
+          />
+
+          <button class="campo botao">Login</button>
+          <a href="#cadastro" class="alternar">Criar Conta</a>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
